@@ -46,7 +46,7 @@ export default function Hero() {
     return () => ctx.revert()
   }, [])
 
-  const title = "L'Art du Goût"
+  const titleWords = ["L'Art", "du", "Goût"]
   
   return (
     <section 
@@ -66,11 +66,11 @@ export default function Hero() {
       <div className="relative z-20 text-center text-white px-4">
         <h1 
           ref={titleRef}
-          className="text-6xl md:text-8xl font-[family-name:var(--font-playfair)] mb-6"
+          className="text-6xl md:text-8xl font-[family-name:var(--font-playfair)] mb-6 whitespace-nowrap"
         >
-          {title.split('').map((char, i) => (
+          {titleWords.map((word, i) => (
             <span key={i} className="char inline-block">
-              {char === ' ' ? '\u00A0' : char}
+              {word}{i < titleWords.length - 1 ? '\u00A0' : ''}
             </span>
           ))}
         </h1>
