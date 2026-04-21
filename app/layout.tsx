@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-  title: 'Restaurant Template',
-  description: 'Site web restaurant moderne et animé',
+  title: "L'Art du Goût - Restaurant",
+  description: 'Une expérience culinaire unique, entre tradition et modernité',
 }
 
 export default function RootLayout({
